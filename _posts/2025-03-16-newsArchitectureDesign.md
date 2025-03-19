@@ -74,7 +74,9 @@ TBD
 
 ### 🎤 TTS API
 
-TBD
+- **Google Cloud TTS** 사용
+
+- ※ [TTS 가이드]({{ site.baseurl }}/technote/TTS/)
 
 ---
 
