@@ -46,7 +46,7 @@ MVP 개발을 위해 필요한 **기획, 기술 검토, API 조사**를 포함�
     Backend ->|TTS 변환 요청| TTS_API[🎤 TTS 변환 API] -->
 <!-- ``` -->
 
-<img src="/assets/images/NewsApp_FlowChart.png" alt="flowChart" width="70%">{: .align-center}
+<img src="/assets/images/NewsApp_FlowChart.png" alt="flowChart" width="100%">{: .align-center}
 
 <!-- ![flowChart](/assets/images/NewsApp_FlowChart.png){: .img-width-half .align-center} -->
 
@@ -128,7 +128,7 @@ TBD
 
 <!-- ``` -->
 
-<img src="/assets/images/NewsApp_SequenceDiagram.png" alt="sequenceDiagram" width="80%">{: .align-center}
+<img src="/assets/images/NewsApp_SequenceDiagram.png" alt="sequenceDiagram" width="100%">{: .align-center}
 
 <!-- ![sequenceDiagram](/assets/images/NewsApp_SequenceDiagram.png) -->
 
