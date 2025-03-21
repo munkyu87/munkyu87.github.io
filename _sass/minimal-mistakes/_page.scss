@@ -192,6 +192,7 @@ body {
     padding: 3em 0;
     @include clearfix;
     background-size: cover;
+    max-height: 200px;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-animation: $intro-transition;
