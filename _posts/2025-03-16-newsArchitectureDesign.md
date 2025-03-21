@@ -2,7 +2,7 @@
 layout: single
 title: "AI 오디오 뉴스 앱 아키텍처 설계"
 categories: SideProject
-tags: [AI, TTS, 뉴스 앱, React Native, Spring Boot, Architecture]
+tags: [뉴스 앱, React Native, Spring Boot, Architecture]
 # toc_label: 목차
 author_profile: true
 search: true

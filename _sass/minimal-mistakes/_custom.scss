@@ -6,3 +6,59 @@
 .page__hero--overlay {
   max-height: 300px;
 }
+
+/* ==========================================================================
+   TAG & CATEGORY STYLES
+   ========================================================================== */
+
+/* 태그 리스트 컨테이너 */
+.taxonomy__index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px; /* 태그 간격 조정 */
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0;
+  list-style: none;
+}
+
+/* 개별 태그 스타일 */
+.taxonomy__index li {
+  background-color: #fafafa;
+  border: 2px solid #bbb;
+  border-radius: 18px; /* 둥근 태그 디자인 */
+  padding: 0.4rem 0.8rem; /* 크기를 줄여서 조정 */
+  font-size: 0.6rem; /* 폰트 크기를 줄여서 더 조밀하게 */
+  font-weight: 600;
+  color: black;
+  // color: #333;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); /* 살짝 그림자 추가 */
+}
+
+/* 태그 내 링크 스타일 */
+.taxonomy__index li a {
+  text-decoration: none;
+  border: none !important;
+  color: inherit;
+}
+
+/* 호버 효과 */
+.taxonomy__index li:hover {
+  background-color: #87b5ff; /* 블루 계열의 은은한 색상 */
+  color: white;
+  border-color: #87b5ff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* 호버 시 더 강한 그림자 */
+  transform: scale(1.05); /* 살짝 커지게 */
+}
+
+/* 태그 개수 스타일 */
+.taxonomy__count {
+  font-size: 0.6rem; /* 숫자 크기를 작게 조정 */
+  font-weight: 500;
+  margin-left: 5px;
+  color: #777;
+}
