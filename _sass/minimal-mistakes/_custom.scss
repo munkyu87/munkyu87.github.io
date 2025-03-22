@@ -1,10 +1,14 @@
 .page__hero {
-  max-height: 300px;
+  // max-height: 300px;
   overflow: hidden;
+  position: relative; /* 🔥 .hero-text가 이 컨테이너 안에서 상대적으로 위치 */
+  z-index: 1; /* 배경은 뒤에 위치 */
 }
 
 .page__hero--overlay {
-  max-height: 300px;
+  // max-height: 300px;
+  position: relative;
+  z-index: 2; /* 배경은 뒤에 위치 */
 }
 
 /* ==========================================================================
@@ -61,4 +65,34 @@
   font-weight: 500;
   margin-left: 5px;
   color: #777;
+}
+
+/* ==========================================================================
+   HERO TEXT (블로그 타이틀 & 설명)
+   ========================================================================== */
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 700px;
+  z-index: 10; /* 🔥 배경보다 위에 오도록 설정 */
+}
+
+.hero-text h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5px;
+  opacity: 0.9;
 }
