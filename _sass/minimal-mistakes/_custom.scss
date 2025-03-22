@@ -29,7 +29,7 @@
 
 /* 개별 태그 스타일 */
 .taxonomy__index li {
-  background-color: #fafafa;
+  background-color: #eaf6ff;
   border: 2px solid #bbb;
   border-radius: 18px; /* 둥근 태그 디자인 */
   padding: 0.4rem 0.8rem; /* 크기를 줄여서 조정 */
@@ -52,9 +52,9 @@
 
 /* 호버 효과 */
 .taxonomy__index li:hover {
-  background-color: #87b5ff; /* 블루 계열의 은은한 색상 */
+  background-color: #87b5ff;
   color: white;
-  border-color: #87b5ff;
+  border-color: #0a66c2;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* 호버 시 더 강한 그림자 */
   transform: scale(1.05); /* 살짝 커지게 */
 }
