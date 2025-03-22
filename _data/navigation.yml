@@ -1,12 +1,13 @@
 # main links
 main:
-  - title: "Category"
+  - title: "📂 Category"
     url: /categories/
-  - title: "Tag"
+  - title: "🏷️ Tag"
     url: /tags/
-  - title: "By Year"
+  - title: "📅 By Year"
     url: /year-archive-grid/
-  - title: "<i class='fas fa-search'></i>"
+  - title: "🔍"
+    # "<i class='fas fa-search'></i>"
     url: /search/
 
   # - title: "Quick-Start Guide"
