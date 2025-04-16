@@ -6,6 +6,8 @@ main:
     url: /tags/
   - title: "📅 By Year"
     url: /year-archive-grid/
+  - title: "🧭 About"
+    url: /about/
   - title: "🔍"
     # "<i class='fas fa-search'></i>"
     url: /search/
