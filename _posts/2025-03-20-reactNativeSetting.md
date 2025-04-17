@@ -113,6 +113,21 @@ echo $ANDROID_HOME
 
 ---
 
+<div class="ads-area in-article">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3629284805087203"
+      crossorigin="anonymous"></script>
+  <!-- in-article-1 -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3629284805087203"
+      data-ad-slot="3410814707"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
 ## 5. React Native 프로젝트 생성
 
 ### (1) 프로젝트 생성

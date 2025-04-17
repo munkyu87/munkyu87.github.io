@@ -220,6 +220,21 @@ curl -X DELETE "http://localhost:9200/my-index/\_doc/1?pretty"
 
 ---
 
+<div class="ads-area in-article">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3629284805087203"
+      crossorigin="anonymous"></script>
+  <!-- in-article-1 -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3629284805087203"
+      data-ad-slot="3410814707"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
 ## 📌 OpenSearch Dashboards 사용법
 
 💡 OpenSearch Dashboards는 Kibana와 유사한 UI를 제공하며, 시각화를 지원합니다.
