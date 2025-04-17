@@ -41,23 +41,29 @@
     </li>
     {% endfor %}
   </ul>
+  <div
+    class="footer-services"
+    style="display: flex; justify-content: space-between; align-items: center"
+  >
+    <ul class="social-icons">
+      <li><strong>Services:</strong></li>
+      {% for link in site.footer.service_links %}
+      <li>
+        <a href="{{ link.url }}" rel="nofollow noopener noreferrer">
+          <i
+            class="{{ link.icon | default: 'fas fa-link' }}"
+            aria-hidden="true"
+          ></i>
+          {{ link.label }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
 
-  <ul class="social-icons">
-    <li>
-      <strong style="min-width: 5em; display: inline-block">Services:</strong>
-    </li>
-    {% for link in site.footer.service_links %}
-    <li>
-      <a href="{{ link.url }}" rel="nofollow noopener noreferrer">
-        <i
-          class="{{ link.icon | default: 'fas fa-link' }}"
-          aria-hidden="true"
-        ></i>
-        {{ link.label }}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+    <div class="privacy-link">
+      <a href="/privacy-policy/" style="color: #fff">Privacy Policy</a>
+    </div>
+  </div>
 </div>
 
 <!-- <div class="page__footer-copyright">

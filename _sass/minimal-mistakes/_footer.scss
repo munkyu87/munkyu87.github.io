@@ -81,3 +81,26 @@
     }
   }
 }
+
+.footer-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .privacy-link a {
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .privacy-link a:hover {
+    text-decoration: underline;
+  }
+}

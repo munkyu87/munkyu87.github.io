@@ -12,6 +12,8 @@ header:
   caption: "기술과 기록이 만나는곳 ✍️"
 ---
 
-호기심이 방향
+<h3>💡 호기심이 방향</h3>
 
-기록이 남긴 로그
+<h3 style="text-align:center;">✍️ 기록이 남긴 로그</h3>
+
+<h3 style="text-align:Right;">☕ 그리고 쉼표 ,</h3>
