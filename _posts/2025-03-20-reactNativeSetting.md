@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "React Native 환경 설정 및 실행 과정"
-categories: SideProject
+categories: [Frontend, SideProject]
 tags: [React Native, iOS, Android]
 ---
 
