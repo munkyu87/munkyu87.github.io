@@ -174,7 +174,7 @@ POST https://api.smartthings.com/oauth/token
 
 ---
 
-# 📋 유의 사항 및 팁
+# 📌 유의 사항 및 팁
 
 | 항목                  | 내용                                                                      |
 | --------------------- | ------------------------------------------------------------------------- |
@@ -186,7 +186,7 @@ POST https://api.smartthings.com/oauth/token
 
 ---
 
-# 🧪 Postman 설정 팁
+# 📌 Postman 설정 팁
 
 - Authorization → Basic Auth: client_id / client_secret 입력
 - Body → x-www-form-urlencoded
