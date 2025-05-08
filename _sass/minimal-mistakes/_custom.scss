@@ -107,16 +107,22 @@
 }
 
 .adsbygoogle {
-  display: block;
-  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block !important;
+  width: 100% !important;
   height: auto;
-  max-width: 100%;
+  max-width: 100% !important;
+  text-align: center !important;
 }
 
 .ads-area.in-article {
   margin: 2.5rem 0;
   padding: 1rem 0;
-  border-top: 1px dashed #ccc;
-  border-bottom: 1px dashed #ccc;
+  border: none;
+  background: transparent;
   text-align: center;
 }
