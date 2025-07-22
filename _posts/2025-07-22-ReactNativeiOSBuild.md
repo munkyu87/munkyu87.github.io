@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "React Native 안드로이드 빌드 가이드"
+title: "React Native iOS 빌드 가이드"
 categories: Frontend
-tags: [ReactNative, Android, EAS Build]
+tags: [ReactNative, iOS, EAS Build]
 toc: true
 toc_sticky: true
 author_profile: true
@@ -10,83 +10,66 @@ author_profile: true
 
 # 📌 개요
 
-React Native 앱을 안드로이드 기기에 설치할 수 있도록 빌드하는 방법을 정리합니다.  
+React Native 앱을 iOS 기기에 설치할 수 있도록 빌드하는 방법을 정리합니다.  
 여기서는 두 가지 빌드 방법을 다룹니다.
 
-✅ **Android Studio 로컬 빌드 (cd android)**  
+✅ **Xcode 로컬 빌드 (cd ios)**  
 ✅ **EAS(Build) 빌드**
 
 ---
 
 # 📌 환경
 
-| 항목             | 내용                            |
-| ---------------- | ------------------------------- |
-| OS               | macOS / Windows / Linux         |
-| Android Studio   | 설치 필요                       |
-| Node.js          | 설치 필요                       |
-| React Native CLI | 설치 (`npx` 사용 가능)          |
-| EAS CLI          | 설치 (`npm install -g eas-cli`) |
+| 항목             | 내용                                 |
+| ---------------- | ------------------------------------ |
+| OS               | macOS (필수)                         |
+| Xcode            | 설치 필요 (최신 버전 권장)           |
+| Node.js          | 설치 필요                            |
+| React Native CLI | 설치 (`npx` 사용 가능)               |
+| EAS CLI          | 설치 (`npm install -g eas-cli`)      |
+| Apple Developer  | 유료 계정 필요 (앱 스토어 업로드 시) |
 
 ---
 
-# 📌 로컬(Android Studio) 빌드
+# 📌 로컬(Xcode) 빌드
 
-React Native 프로젝트를 직접 Android Studio로 빌드하거나, 터미널에서 APK/AAB 파일을 생성할 수 있습니다.
+React Native 프로젝트를 직접 Xcode로 빌드하거나, 터미널에서 시뮬레이터/디바이스에 앱을 설치할 수 있습니다.
 
 ---
 
-## 1️⃣ 개발용 실행 (에뮬레이터)
+## 1️⃣ 개발용 실행 (시뮬레이터)
 
 ```bash
-npm run android
+npm run ios
 or
-npx react-native run-android
+npx react-native run-ios
 ```
 
 ---
 
-## 2️⃣ Android Studio로 빌드
+## 2️⃣ Xcode로 빌드
 
-1. Android Studio 실행 → `Open` → 프로젝트의 `android/` 폴더 선택
-2. 메뉴 → `Build` → `Build Bundle(s) / APK(s)`
-   - APK 빌드: `Build APK(s)`
-   - AAB 빌드: `Build Bundle`
-
-- 빌드가 완료되면 android/app/build/outputs/apk/ 또는 android/app/build/outputs/bundle/에 파일이 생성됩니다.
+1. Xcode 실행 → Open → 프로젝트의 ios/MyApp.xcworkspace 선택
+2. 상단의 타겟 기기를 선택 (시뮬레이터 또는 물리 디바이스)
+3. 메뉴 → Product → Build 또는 ▶️ (Run) 버튼 클릭
+4. 빌드가 완료되면 앱이 시뮬레이터 또는 디바이스에 설치됩니다.
 
 ---
 
-## 3️⃣ 터미널에서 APK/AAB 빌드
+## 3️⃣ Archive (스토어 업로드용)
 
-### APK 빌드
+### 스토어에 업로드하려면 .ipa 파일을 만들기 위해 Archive를 진행해야 합니다.
 
-```bash
-cd android
-./gradlew assembleRelease
-```
-
-- 생성된 APK 파일:
-
-  android/app/build/outputs/apk/release/app-release.apk
-
-### AAB 빌드
-
-```bash
-cd android
-./gradlew bundleRelease
-```
-
-- 생성된 AAB 파일:
-
-  android/app/build/outputs/bundle/release/app-release.aab
-
----
+1. Xcode에서 상단 Scheme을 Any iOS Device 또는 연결된 디바이스로 변경
+2. 메뉴 → Product → Archive 클릭
+3. 빌드가 완료되면 Organizer 창이 열리며, 여기서:
+   • .ipa 파일로 Export
+   • 또는 App Store Connect에 업로드
 
 # 📌 EAS(Build) 빌드
 
 EAS(Build)는 Expo에서 제공하는 클라우드 빌드 서비스입니다.
-로컬 환경을 구성하지 않고도 쉽게 APK/AAB 파일을 빌드할 수 있습니다.
+로컬 환경을 구성하지 않고도 쉽게 ipa 파일을 빌드할 수 있습니다.
 
 ---
 
@@ -104,16 +87,16 @@ eas build:configure
 
 ## 3️⃣ 빌드
 
-### AAB 빌드
+### production 빌드
 
 ```bash
-eas build -p android --profile production
+eas build -p ios --profile production
 ```
 
-### APK 빌드
+### development 빌드 (Development Client)
 
 ```bash
-eas build -p android --profile preview
+eas build -p ios --profile development
 ```
 
 - profile은 eas.json에 정의된 설정을 사용합니다.
