@@ -79,17 +79,9 @@ cd MyWindowsApp
 
 ## 6. Windows 플랫폼 추가
 ```powershell
-npx @react-native-community/cli init MyWindowsApp --version 0.75.2
-cd MyWindowsApp
+npx react-native-windows-init --version 0.75.0 --language cs --overwrite
 ```
-
----
-
-## 6. Windows 플랫폼 추가
-```powershell
-npx @react-native-community/cli init MyWindowsApp --version 0.75.2
-cd MyWindowsApp
-```
+- cs는 씨샵, 없으면 C++로 생성.
 
 ---
 
